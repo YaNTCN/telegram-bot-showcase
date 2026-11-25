@@ -1,0 +1,13 @@
+services:
+  bot:
+    build: .
+    env_file: .env
+    restart: unless-stopped
+    volumes:
+      - bot_db:/app/data/db
+    ports:
+      # /healthz и /metrics только с этой машины
+      - "127.0.0.1:8080:8080"
+
+volumes:
+  bot_db:

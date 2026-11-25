@@ -1,0 +1,4 @@
+aiogram==3.34.0
+aiosqlite==0.22.1
+prometheus-client==0.26.0
+python-dotenv==1.2.1
